@@ -1,0 +1,268 @@
+html {	
+	background-color: #312e2e;		/* BakgrundsfÃ¤rgen.*/
+}
+
+body {		/*GÃ¤ller hela sidan om inte annat specifieras.*/
+	font-family: 'Raleway-medium', sans-serif;
+	height: 165px;
+	color: black;
+	background-color: black;		/*FÃ¤rgen pÃ¥ meny-remsan.*/
+	margin: 0px auto;	
+	padding: 0px;
+	
+}
+
+header {		
+	color: white;
+	max-width: 1300px;
+	margin: 0 auto 40px;
+}
+
+
+/*LISTOR.*/
+ul {
+    list-style-type: none;			/*Tar bort punkterna ur listan.*/
+    margin-left: 0 auto;
+    padding-left: 100px;		/*Flyttar list-boxen och allt i den.*/	
+    overflow: hidden;
+    background-color: black;			/*FÃ¤rg pÃ¥ list-boxen.*/
+	color: white;
+}
+
+li {
+    float: left;			/*Listan lÃ¤gger sig Ã¥t vÃ¤nster.*/
+}
+
+li a, .button {			/*Samma sak gÃ¤ller fÃ¶r bÃ¥de lÃ¤nkarna och knappen.*/
+    display: block;
+    color: white;		/*Text-fÃ¤rg.*/
+	background-color: black;
+	text-align: right;
+    padding: 0 0;
+	margin-right: 0;		/*Hur lÃ¥ngt ifrÃ¥n varandra lÃ¤nkarna hamnar*/
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover, .button:hover {			/*NÃ¤r man hoovrar Ã¶ver fÃ¶ljande.*/
+    text-decoration: underline;
+	text-decoration-color: #25bfff;			/*Ã„ndrar fÃ¤rgen pÃ¥ underline.*/
+	font-weight: bold;
+	background-color: black;
+	color: white;
+}
+
+.current {						/*Markerar avdelningen i den globala menyn som man Ã¤r inne pÃ¥.*/
+	text-decoration: underline;
+	text-decoration-color: #25bfff;
+	font-weight: bold;	
+}
+/*LISTOR SLUT.*/
+
+.grupptraning {		/*GÃ¤ller nÃ¤r man tryckt pÃ¥ "GrupptrÃ¤ning", sÃ¥ den inte ligger sÃ¥ nÃ¤ra punkten "TrÃ¤ning" */
+	margin-top: 10px;
+}
+
+/*DROP-DOWN MENYN*/
+.dropdown-content {
+    display: none;				/*Vilken sorts box elementet ska ha. HÃ¤r syns boxen bara om man hovrar Ã¶ver den.*/
+    position: absolute;			/*Vart boxen hamnar. HÃ¤r stannar den kvar hos sin "punkt" till skillnad frÃ¥n ex. "fixed" dÃ¤r den fÃ¶ljer med sidanom man ex. scrollar.*/
+    background-color: black;
+	color: white;	
+    min-width: 100px;			/*Hur lÃ¥ngt boxen strÃ¤cker sig.*/
+    border-radius: 3px;			/*Ger rundade hÃ¶rn.*/
+	box-shadow: 7px 5px 5px black;	/*Ger boxen en skugga. Ordning:  x-led(positivt nummer =skugga hÃ¶ger, neg. =vÃ¤nster) | y-led | blur | fÃ¤rg|.*/
+    z-index: 1;			/*Drop-down ska hamna framfÃ¶r allting.*/
+	
+}
+
+.dropdown-content a {			/*Redigering av lÃ¤nken i dropdown.*/
+    color: white;
+	background-color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	border-radius: 3px;
+}
+
+.dropdown-content a:hover {
+	text-decoration: underline;
+	text-decoration-color: #25bfff;	
+}
+
+.dropdown:hover .dropdown-content {			
+	display: block;			/*Talar om att dropdown ska vara ett block.*/
+}
+/*DROP-DOWN MENYN SLUT*/
+
+
+/*HJÃ„LPMENYN.*/
+.hjalpmeny {
+	padding-left: 940px;			/*Flyttar HjÃ¤lpmenyn Ã¥t hÃ¶ger (marginalen till vÃ¤nsterkanten gÃ¶rs stor).*/
+}
+.hlink {
+	color: #25bfff;
+	background-color: black;
+	padding-right: 15px;		/*Distans mellan punkter.*/
+	margin: 0px auto;
+}
+/*HJÃ„LPMENYN SLUT.*/
+/*GLOBALA MENYN.*/
+.globalmeny {
+	padding-left: 60px;
+	margin: 10px auto;			/*Distans mellan punkterna.*/
+	font-weight: bold;
+	font-size: 100%;	
+}
+/*GLOBALA MENYN SLUT.*/
+
+
+/*LOGO.*/
+#logo {
+	float: left;
+	margin: 0 auto;
+}
+/*LOGO SLUT.*/
+
+
+/*Resten av sidan (allt under den globala menyn)*/
+
+#page {
+	max-width: 900px;
+	margin: 10px auto;
+	/* margin-top: 20px;	
+	margin-left: 155px;		/*sÃ¥ att det ser ut som en "sida" i mitten*/
+	/*margin-right: 100px;
+	margin-bottom: 10px; */
+	padding-top: 5px;		/*Padding Ã¤r hur nÃ¤ra kanten pÃ¥ boxen texten kan vara.*/
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-bottom: 20px; 
+	background-color: white;		/*BakgrundsfÃ¤rgen i boxen.*/
+	color: black;
+	border: 1px solid;
+	border-radius: 3px;	
+} 
+
+img {
+	border-radius: 5px;
+
+}
+
+footer {
+	color: #25bfff;
+	background-color: #312e2e;
+	text-align: center;
+}
+
+hr {
+	visibility: hidden;
+}
+
+		/*SIDA:1 INDEX*/
+
+#ambitios_container {
+	width: 700px;
+	margin-right: 300px;
+	border: 1px;
+}
+
+#oppettider {
+	float: right;
+	width: 160px;	
+	border: 1px;
+	font-size: 80%;
+	border: 1px;
+	
+}
+
+		/*SIDA 2: TRÃ„NING*/
+.container {
+	width: 900px;
+}
+
+.float {
+	width: 600px;
+	margin-right: 10px;
+	float: left;	
+}
+
+.traning {
+	margin: 10px;
+}
+
+		/*SIDA 3: GRUPPTRÃ„NING*/
+
+#inomhus {
+	float: left;
+	width: 400px;
+	margin-right: 100px;
+}
+
+#sidorubrik {
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 40px;
+}
+
+		/*SIDA 4: MEDLEMSKAP*/
+		
+.m_bild {
+	margin-top: 16px;
+	margin-left: 140px;
+}
+
+#m_sidorubrik {
+	text-align: center;
+	margin-left: 100px;
+	font-size: 25px;	
+}
+
+#m_info {
+	text-align: center;
+	width: 740px;
+}
+		/*SIDA 5: PERSONAL*/
+.container_p {				/* Beskrivningen.*/
+	width: 800px;
+		
+}
+
+.bild_p {					/*Bilderna.*/
+	float: left;
+	margin-left: 10px;
+	margin-right: 30px;
+}
+
+#pia_i_receptionen {
+	text-align: center;
+	font-size: 20px;
+}
+
+/*SIDA 6: NYHETER&aKTIVITETER*/
+#n_sidorubrik {
+	text-align: center;
+}
+#n_info {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.aktiviteter {
+	float: left;
+	width: 380px;
+	margin-left: 10px;
+	border: 1px;
+}
+
+.nyheter {
+	width: 370px;
+	margin-left: 540px;
+	border: 1px;
+}
+
+/*SIDA 7: LÃ„TTLÃ„ST*/
+#stortext {
+	text-align: center;
+	font-size: 110%;
+}
